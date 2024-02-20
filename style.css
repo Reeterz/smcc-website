@@ -97,4 +97,24 @@ header .ul-list{
     background-size: cover;
     height: calc(100vh - 80px);
  }
-
+ 
+ #about{
+    padding-left: 3%;
+    padding-top: 2%;
+ }
+ 
+ .course{
+    padding-left: 3%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+ }
+.services{
+    padding-left: 3%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+#contact{
+    padding-left: 3%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
