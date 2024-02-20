@@ -1,0 +1,100 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: blueviolet;
+    height: 80px;
+    width: 100%;
+}
+label.logo a{
+    color: whitesmoke;
+    font-size: 32px;
+    line-height: 80px;
+    font-weight: bold;
+    padding-left: 2%;
+    text-decoration: none;
+    cursor: pointer;
+}
+header .ul-list{
+    float: right;
+    margin-right: 25px;
+}
+ header .ul-list .li-list{
+    list-style: none;
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 25px;
+ }
+ header .ul-list .li-list .li-link{
+    color: whitesmoke;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+ }
+ header .ul-list .li-list .li-link:hover{
+    color: orange;
+    text-decoration: underline;
+ }
+ .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+ }
+ #check{
+    display: none;
+ }
+
+ @media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    header .ul-list .li-list .li-link{
+        font-size: 16px;
+    }
+ }
+ @media (max-width: 858px){
+    .checkbtn{
+        display: block;
+        margin-right: 20px;
+    }
+    .ul-list{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: darkblue;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    header .ul-list .li-list{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    header .ul-list .li-list .li-link{
+        font-size: 20px;
+    }
+    header .li-link:hover{
+        background: none;
+        color: orange;
+    }
+    #check:checked ~ .ul-list{
+        left: 0;
+    }
+ }
+ body{
+    background: url(images/smcc-bg.jpg);
+    background-size: cover;
+    height: calc(100vh - 80px);
+ }
+
